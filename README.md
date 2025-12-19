@@ -43,7 +43,7 @@
 ### 1️⃣ محاسبه Prime Paths از یک گراف دلخواه
 
 ```python
-from prime_paths import prime_paths_from_adj
+from prime_path_finder import prime_paths_from_adj
 
 G = {
     'A': ['B', 'C'],
@@ -62,7 +62,7 @@ for p in prime_paths:
 ### 2️⃣ استخراج CFG از کد پایتون
 
 ```python
-from prime_paths import cfg_from_python_source, prime_paths_from_adj
+from prime_path_finder import cfg_from_python_source, prime_paths_from_adj
 
 source_code = """
 def f(x):
@@ -82,7 +82,7 @@ prime_paths = prime_paths_from_adj(cfg)
 ### 3️⃣ نمایش گراف CFG
 
 ```python
-from prime_paths import print_adjacency_list
+from prime_path_finder import print_adjacency_list
 
 print_adjacency_list(cfg)
 ```
